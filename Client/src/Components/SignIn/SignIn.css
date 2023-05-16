@@ -1,0 +1,61 @@
+.form{
+    width: 50%;
+    height:600px;
+    padding: 5%;
+    background-image: url('../../images/watch7.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    border: 10px solid white;
+    opacity: .8;
+    color: white;
+    border-radius:20px;
+    box-shadow: 0 0 5px lightgray;
+}
+.btn-reset{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid lime;
+    color: lime;
+    border-radius: 3px;
+}
+.btn-reset:hover{
+    cursor: pointer;
+    background: burlywood;
+    border: 2px solid burlywood;
+    color: white;
+}
+.btn-signup{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #00ffee;
+    color: #00ffee;
+    border-radius: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.btn-signup:hover{
+    cursor: pointer;
+    background: #00ffee;
+    border: 2px solid #00ffee;
+    color: white;
+}
+[type=submit]:not(:disabled) {
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid burlywood;
+    color: burlywood;
+}
+[type=submit]:not(:disabled):hover {
+    cursor: pointer;
+    background: burlywood;
+    border: 2px solid white;
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    .form{
+        width: 100%;
+    }
+    
+}
