@@ -5,7 +5,7 @@ const Feedback = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/feedback`;
+        const url = `https://watch-inventory-f56f.onrender.com/feedback`;
         fetch(url, {
             method: 'POST',
             headers: {

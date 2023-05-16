@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const useWatchDetails = watchId => {
     const [watch, setWatch] = useState({})
     useEffect(() => {
-        const url = `http://localhost:5000/items/${watchId}`;
+        const url = `https://watch-inventory-f56f.onrender.com/items/${watchId}`;
         console.log(url);
         fetch(url)
             .then(res => res.json())

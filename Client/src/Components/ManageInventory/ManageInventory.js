@@ -10,7 +10,7 @@ const ManageInventory = () => {
     const handleDelete = watchId => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/items/${watchId}`;
+            const url = `https://watch-inventory-f56f.onrender.com/items/${watchId}`;
             fetch(url, {
                 method: 'DELETE'
             })

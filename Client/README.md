@@ -25,4 +25,4 @@
 - Deployed the server side or backend in heroku.
 - Deployed the client side in firebase.
 
-# Heroku Link : http://localhost:5000/
+# Heroku Link : https://watch-inventory-f56f.onrender.com/

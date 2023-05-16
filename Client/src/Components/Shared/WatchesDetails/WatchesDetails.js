@@ -8,7 +8,7 @@ const WatchesDetails = () => {
     const { id } = useParams();
     const [watch, setWatch] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/items/${id}`;
+        const url = `https://watch-inventory-f56f.onrender.com/items/${id}`;
         // console.log(url);
         fetch(url)
             .then(res => res.json())
@@ -33,7 +33,7 @@ const WatchesDetails = () => {
         console.log(newWatch);
         setWatch(newWatch);
         // const url = ;
-        fetch(`http://localhost:5000/items/${id}`, {
+        fetch(`https://watch-inventory-f56f.onrender.com/items/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -64,7 +64,7 @@ const WatchesDetails = () => {
         console.log(newWatch);
         setWatch(newWatch);
         // const url = ;
-        fetch(`http://localhost:5000/items/${id}`, {
+        fetch(`https://watch-inventory-f56f.onrender.com/items/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

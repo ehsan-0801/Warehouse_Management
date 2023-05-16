@@ -10,7 +10,7 @@ const MyItems = () => {
     const handleDelete = watchId => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/items/${watchId}`;
+            const url = `https://watch-inventory-f56f.onrender.com/items/${watchId}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -23,7 +23,7 @@ const MyItems = () => {
         }
     }
     useEffect(() => {
-        fetch("http://localhost:5000/items")
+        fetch("https://watch-inventory-f56f.onrender.com/items")
             .then(res => res.json())
             .then(data => setWatches(data));
     }, [])

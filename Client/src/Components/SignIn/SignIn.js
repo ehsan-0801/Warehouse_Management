@@ -33,7 +33,7 @@ const SignIn = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         await signInWithEmailAndPassword(email, password);
-        const { data } = await axios.post('http://localhost:5000/signin', { email });
+        const { data } = await axios.post('https://watch-inventory-f56f.onrender.com/signin', { email });
         localStorage.setItem('accessToken', data.accessToken);
         // console.log(data);
         navigate(from, { replace: true });
